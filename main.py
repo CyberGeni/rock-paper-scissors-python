@@ -1,5 +1,7 @@
 import random
 
+rounds = int(input('How many rounds do you want to play?'))
+
 choices = ['R', #for rock
            'P', #for paper
            'S'  #for scissors
@@ -39,6 +41,7 @@ def playRound(playerSelection, computerSelection):
         print('It\'s a Tie')
     else:
         print('Invalid input')
+        gameplay()
 
 # values for the gameplay
 def gameplay():
@@ -48,13 +51,11 @@ def gameplay():
     
     playRound(playerSelection, computerSelection)
 
-rounds = int(input('How many rounds do you want to play?'))
-score_count = 0
-
 def game():
     for i in range(rounds):
         print('Round ' + str(i + 1))
         i += 1
         gameplay()  
-
+    else:
+        print('_________________________________________________Game Over!!!____________________________________________________ \n Thanks for playing (inserts smiley face emoji)')
 game()
