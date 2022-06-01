@@ -1,1 +1,1 @@
-# rock-paper-scissors-python
+# Rock - Paper - Scissors Game using Python
